@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <script src="script.js"></script>
+    <script src="directive_first_simple.js"></script>
+
+</head>
+<body >
+    <div ng-app='myApp' ng-controller='myController'>
+        <h1>Hello Plunker!</h1>
+        {{name}}
+        <br />
+        <my-directive name-html="name1" greet-html="hi(name1)"></my-directive>
+        <my-directive name-html="name2" greet-html="bye(name2)"></my-directive>
+        <my-directive name="name3"></my-directive>
+    </div>
+    
+</body>
+</html>
